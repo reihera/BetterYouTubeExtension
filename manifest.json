@@ -12,8 +12,9 @@
     {
       "matches": ["https://www.youtube.com"],
       "js": ["BYL.js"]
-    }
-  ]
-}
 
-}
+      }],
+
+    { ""
+    "host_permissions": ["https://youtube.com"]
+    }
