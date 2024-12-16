@@ -8,3 +8,14 @@ ytd-app {
     rtl: ignore;
     background: #e1002d;
 }
+
+ytd-guide-section-renderer.style-scope:nth-child(1) > div:nth-child(2) > ytd-guide-entry-renderer:nth-child(2) {
+    display: none;
+}
+
+ytd-rich-section-renderer.style-scope:nth-child(11) > div:nth-child(1) > ytd-rich-shelf-renderer:nth-child(1) {
+    display: none;
+}
+ytd-rich-section-renderer.style-scope:nth-child(33) {
+    display: none;
+}
