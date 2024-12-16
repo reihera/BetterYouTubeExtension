@@ -3,7 +3,7 @@
   "name": "Better YouTube Layout",
   "version": "0.1.0",
 
-  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "description": "Makes the YouTube layout not dogshit.",
 
   "content_scripts": [
     {

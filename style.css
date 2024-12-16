@@ -3,10 +3,8 @@ ytd-app {
     --yt-spec-additive-background: rgba(255, 0, 0, 0.1);
 }
 
-#masthead,
-#primary {
-
-}
-#masthead {
-
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
+    color: #fff;
+    rtl: ignore;
+    background: #e1002d;
 }
