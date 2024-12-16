@@ -1,0 +1,19 @@
+{
+  "manifest_version": 1,
+  "name": "Better YouTube Layout",
+  "version": "0.1.0",
+
+  "description": "Changes the YouTube layout to not be terrible.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+    "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com"],
+      "js": ["BYL.js"]
+    }
+  ]
+}
+
+}
