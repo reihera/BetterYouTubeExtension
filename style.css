@@ -30,3 +30,10 @@ ytd-guide-section-renderer.style-scope:nth-child(2) > h3:nth-child(1) {
 ytd-rich-section-renderer.style-scope:nth-child(17) {
     display: none;
 }
+
+button.yt-spec-button-shape-next--icon-leading {
+    border-radius: 4px;
+}
+html {
+    --rounding: 4px;
+}
