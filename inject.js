@@ -1,5 +1,5 @@
-let data = JSON.parse(responseText);
-let div = document.createElement("div");
-div.className = data.className;
-div.textContent = `Your favorite color is now ${data.color}`;
-addonElement.appendChild(div);
+//let text = "Shorts";
+//let result = text.replace("Shorts", "Explore");
+console.log("it shoulda replaced shorts god dammit i fucking hate javascript man");
+>Shorts<.replaceWith(>Explore<);
+console.error("kill yourelf");

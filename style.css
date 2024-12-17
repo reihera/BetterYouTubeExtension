@@ -6,7 +6,7 @@ ytd-app {
 .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
     color: #fff;
     rtl: ignore;
-    background: #e1002d;
+    background: #e1373a;
 }
 
 ytd-guide-section-renderer.style-scope:nth-child(1) > div:nth-child(2) > ytd-guide-entry-renderer:nth-child(2) {
@@ -17,5 +17,16 @@ ytd-rich-section-renderer.style-scope:nth-child(11) > div:nth-child(1) > ytd-ric
     display: none;
 }
 ytd-rich-section-renderer.style-scope:nth-child(33) {
+    display: none;
+}
+
+ytd-reel-shelf-renderer.style-scope {
+    display: none;
+}
+
+ytd-guide-section-renderer.style-scope:nth-child(2) > h3:nth-child(1) {
+    display: none;
+}
+ytd-rich-section-renderer.style-scope:nth-child(17) {
     display: none;
 }
