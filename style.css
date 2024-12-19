@@ -37,3 +37,26 @@ button.yt-spec-button-shape-next--icon-leading {
 html {
     --rounding: 4px;
 }
+
+.yt-spec-touch-feedback-shape {
+    border-radius: 4px;
+}
+ytd-menu-renderer.ytd-watch-metadata > yt-button-shape:nth-child(4) > button:nth-child(1) {
+    border-radius: 4px;
+}
+
+ytd-menu-renderer.ytd-watch-metadata > div:nth-child(1) > segmented-like-dislike-button-view-model:nth-child(1) > yt-smartimation:nth-child(1) > div:nth-child(1) > div:nth-child(1) > like-button-view-model:nth-child(1) > toggle-button-view-model:nth-child(1) > button-view-model:nth-child(1) > button:nth-child(1) {
+    border-radius: 4px 0 0 4px;
+}
+ytd-menu-renderer.ytd-watch-metadata > div:nth-child(1) > segmented-like-dislike-button-view-model:nth-child(1) > yt-smartimation:nth-child(1) > div:nth-child(1) > div:nth-child(1) > dislike-button-view-model:nth-child(2) > toggle-button-view-model:nth-child(1) > button-view-model:nth-child(1) > button:nth-child(1) {
+    border-radius: 0 4px 4px 0;
+}
+ytd-button-renderer.undefined > yt-button-shape:nth-child(1) > button:nth-child(1) {
+    border-radius: 4px;
+}
+.yt-spec-button-shape-next--icon-leading-trailing {
+    border-radius: 4px;
+}
+#top > div:nth-child(2) {
+    border-radius: 4px;
+}
