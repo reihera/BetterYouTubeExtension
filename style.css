@@ -64,7 +64,7 @@ ytd-button-renderer.undefined > yt-button-shape:nth-child(1) > button:nth-child(
     border-radius: 4px;
 }
 ytd-video-owner-renderer.style-scope {
-    background-color:#252525;
+    background-color:#171717;
     padding: 6px;
     border-radius: 4px 0 0 4px;
     margin-top: 2px;
@@ -72,13 +72,36 @@ ytd-video-owner-renderer.style-scope {
     margin-bottom: 2px;
 }
 ytd-subscribe-button-renderer.style-scope {
-    background-color:#252525;
+    background-color:#171717;
     padding-left: 4px;
-    padding-top: 9px;
-    padding-bottom: 10px;
+    padding-top: 9.5px; /* this is terrible */
+    padding-bottom: 9.5px;
     padding-right: 6px;
     border-radius: 0 4px 4px 0;
 }
 div.animated-action__lottie:nth-child(1) {
     border-radius: 4px;
+}
+#bottom-row > div:nth-child(1) {
+    border-radius: 4px;
+}
+/* game */
+ytd-rich-metadata-renderer.style-scope:nth-child(1) {
+    border-radius: 4px;
+    background-color: rgb(23, 23, 23);
+}
+/* catagory */
+ytd-rich-metadata-renderer.style-scope:nth-child(2) {
+    border-radius: 4px;
+    background-color: #171717;
+}
+
+ytd-compact-video-renderer.style-scope:nth-child(2) > div:nth-child(1) > ytd-thumbnail:nth-child(1) {
+    border-radius: 4px;
+}
+/* Video Suggestions while in player */
+ytd-compact-video-renderer.style-scope {
+    border-radius: 4px;
+    background-color: #171717;
+
 }
