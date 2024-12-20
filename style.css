@@ -105,3 +105,25 @@ ytd-compact-video-renderer.style-scope {
     background-color: #171717;
 
 }
+ytd-watch-metadata[flex-menu-enabled] #actions.ytd-watch-metadata {
+    background-color: #171717;
+    border-radius: 4px;
+    padding: 4px;
+    padding-left: -4px;
+    padding-right: 4px;
+    -moz-box-flex: 1;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-width: calc(25% - 6px);
+}
+#bottom-row > div:nth-child(1) {
+    background-color: #171717;
+}
+#description-inline-expander > tp-yt-paper-button:nth-child(4) {
+    background-color: #2f2f2f;
+    margin: 1px;
+    padding: 2px;
+    border-radius: 4px;
+
+}
