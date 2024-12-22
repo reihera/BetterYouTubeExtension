@@ -1,11 +1,14 @@
+
 ytd-app {
-    --yt-spec-brand-icon-active: #e1373a;
+    --yt-spec-brand-icon-active: var(--byl-accent);
     --yt-spec-additive-background: rgba(255, 0, 0, 0.1);
-    --yt-spec-icon-inactive: #2f2f2f;
-    --yt-spec-badge-chip-background: #2f2f2f;
+    --yt-spec-icon-inactive: var(--byl-button-background);
+    --yt-spec-badge-chip-background: var(--byl-button-background);
     --ytd-menu-renderer-button-color: #fff;
     --byl-accent: #e1373a;
     --byl-rounding: 4px;
+    --byl-background: #171717;
+    --byl-button-background: #2f2f2f;
 }
 /* Subscribe Button ! */
 .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
@@ -42,6 +45,7 @@ button.yt-spec-button-shape-next--icon-leading {
 html {
     --rounding: var(--byl-rounding);
     background-color: #2f2f2f;
+
 }
 
 .yt-spec-touch-feedback-shape {
@@ -131,7 +135,7 @@ ytd-watch-metadata[flex-menu-enabled] #actions.ytd-watch-metadata {
 /* more button in description */
     background-color: #2f2f2f;
    /* margin: 3px */
-    padding-inline: 4px;
+    padding: 0 10px;
     border-radius: var(--byl-rounding);
 }
 yt-chip-cloud-chip-renderer {
@@ -163,4 +167,57 @@ yt-chip-cloud-chip-renderer {
 /* NEW icon beside videos in reccomended. */
     background-color: var(--byl-accent);
     color: var(--ytd-menu-renderer-button-color);
+}
+.ytVideoMetadataCarouselViewModelHost {
+/* live chat replay panel */
+    background-color: var(--byl-background);
+    border-radius: var(--byl-rounding);
+}
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
+/* open panel button in the live chat replay thing */
+    border-radius: var(--byl-rounding);
+    background: var(--byl-button-background);
+}
+.yt-spec-button-shape-next--size-m {
+/* show chat replay/live chat button*/
+    border-radius: var(--byl-rounding);
+    background-color: var(--byl-button-background);
+}
+.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--outline {
+    border-style: unset;
+}
+yt-icon.ytd-badge-supported-renderer {
+    color: #0070ff;
+
+}
+ytd-thumbnail[size="medium"] a.ytd-thumbnail, ytd-thumbnail[size="medium"]::before {
+    border-radius: var(--byl-rounding);
+}
+.yt-spec-button-shape-next--size-xs {
+    border-radius: var(--byl-rounding);
+}
+.yt-spec-avatar-shape__image {
+    margin-right: -12px;
+    border-radius: var(--byl-rounding);
+}
+ytd-thumbnail[size="large"] a.ytd-thumbnail, ytd-thumbnail[size="large"]::before {
+    border-radius: var(--byl-rounding) var(--byl-rounding) 0 0;
+}
+#details.ytd-rich-grid-media {
+    border-radius:  0 0 var(--byl-rounding) var(--byl-rounding);
+    background-color: var(--byl-background);
+    padding-bottom: 4px;
+}
+ytd-post-renderer[rounded-container] {
+    border-radius: var(--byl-rounding);
+    background-color: var(--byl-background);
+}
+.yt-spec-button-shape-next--size-s {
+    border-radius: var(--byl-rounding);
+}
+#avatar.ytd-video-owner-renderer {
+    border-radius: var(--byl-rounding);
+}
+#author-thumbnail.ytd-comment-view-model yt-img-shadow.ytd-comment-view-model {
+    border-radius: var(--byl-rounding);
 }
