@@ -1,12 +1,17 @@
 ytd-app {
-    --yt-spec-brand-icon-active: #e1002d;
+    --yt-spec-brand-icon-active: #e1373a;
     --yt-spec-additive-background: rgba(255, 0, 0, 0.1);
+    --yt-spec-icon-inactive: #2f2f2f;
+    --yt-spec-badge-chip-background: #2f2f2f;
+    --ytd-menu-renderer-button-color: #fff;
+    --byl-accent: #e1373a;
+    --byl-rounding: 4px;
 }
 /* Subscribe Button ! */
 .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
     color: #fff;
     rtl: ignore;
-    background: #e1373a;
+    background: var(--byl-accent);
 }
 
 ytd-guide-section-renderer.style-scope:nth-child(1) > div:nth-child(2) > ytd-guide-entry-renderer:nth-child(2) {
@@ -35,38 +40,39 @@ button.yt-spec-button-shape-next--icon-leading {
     border-radius: 4px;
 }
 html {
-    --rounding: 4px;
+    --rounding: var(--byl-rounding);
+    background-color: #2f2f2f;
 }
 
 .yt-spec-touch-feedback-shape {
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
 }
 ytd-menu-renderer.ytd-watch-metadata > yt-button-shape:nth-child(4) > button:nth-child(1) {
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
 }
 
 ytd-menu-renderer.ytd-watch-metadata > div:nth-child(1) > segmented-like-dislike-button-view-model:nth-child(1) > yt-smartimation:nth-child(1) > div:nth-child(1) > div:nth-child(1) > like-button-view-model:nth-child(1) > toggle-button-view-model:nth-child(1) > button-view-model:nth-child(1) > button:nth-child(1) {
-    border-radius: 4px 0 0 4px;
+    border-radius: var(--byl-rounding) 0 0 var(--byl-rounding);
 }
 ytd-menu-renderer.ytd-watch-metadata > div:nth-child(1) > segmented-like-dislike-button-view-model:nth-child(1) > yt-smartimation:nth-child(1) > div:nth-child(1) > div:nth-child(1) > dislike-button-view-model:nth-child(2) > toggle-button-view-model:nth-child(1) > button-view-model:nth-child(1) > button:nth-child(1) {
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 var(--byl-rounding) var(--byl-rounding) 0;
 }
 ytd-button-renderer.undefined > yt-button-shape:nth-child(1) > button:nth-child(1) {
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
 }
 .yt-spec-button-shape-next--icon-leading-trailing {
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
 }
 #top > div:nth-child(2) {
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
 }
-#subscribe-button-shape > button:nth-child(1) {
-    border-radius: 4px;
+#subscribe-button-shape > button:marginnth-child(1) {
+    border-radius: var(--byl-rounding);
 }
 ytd-video-owner-renderer.style-scope {
     background-color:#171717;
     padding: 6px;
-    border-radius: 4px 0 0 4px;
+    border-radius: var(--byl-rounding) 0 0 var(--byl-rounding);
     margin-top: 2px;
     margin-left: 2px;
     margin-bottom: 2px;
@@ -77,37 +83,38 @@ ytd-subscribe-button-renderer.style-scope {
     padding-top: 9.5px; /* this is terrible */
     padding-bottom: 9.5px;
     padding-right: 6px;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 var(--byl-rounding) var(--byl-rounding) 0;
 }
 div.animated-action__lottie:nth-child(1) {
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
 }
 #bottom-row > div:nth-child(1) {
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
 }
 /* game */
 ytd-rich-metadata-renderer.style-scope:nth-child(1) {
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
     background-color: rgb(23, 23, 23);
 }
 /* catagory */
 ytd-rich-metadata-renderer.style-scope:nth-child(2) {
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
     background-color: #171717;
 }
 
 ytd-compact-video-renderer.style-scope:nth-child(2) > div:nth-child(1) > ytd-thumbnail:nth-child(1) {
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
 }
 /* Video Suggestions while in player */
 ytd-compact-video-renderer.style-scope {
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
     background-color: #171717;
 
 }
 ytd-watch-metadata[flex-menu-enabled] #actions.ytd-watch-metadata {
+/* that fuckass box around the like/share/more buttons */
     background-color: #171717;
-    border-radius: 4px;
+    border-radius: var(--byl-rounding);
     padding: 4px;
     padding-left: -4px;
     padding-right: 4px;
@@ -121,9 +128,39 @@ ytd-watch-metadata[flex-menu-enabled] #actions.ytd-watch-metadata {
     background-color: #171717;
 }
 #description-inline-expander > tp-yt-paper-button:nth-child(4) {
+/* more button in description */
     background-color: #2f2f2f;
-    margin: 1px;
-    padding: 2px;
-    border-radius: 4px;
+   /* margin: 3px */
+    padding-inline: 4px;
+    border-radius: var(--byl-rounding);
+}
+yt-chip-cloud-chip-renderer {
+/* tags beside video and probably more stuff */
+    border-radius: var(--byl-rounding);
 
+}
+.yt-spec-button-shape-next--icon-only-default {
+/* ngl i have no idea what this is */
+    border-radius: var(--byl-rounding);
+    background-color: #2f2f2f;
+}
+.ytSearchboxComponentSearchButton {
+/* searchbox 1 */
+    border-radius: 0 var(--byl-rounding) var(--byl-rounding) 0;
+    background-color: #2f2f2f;
+}
+.ytSearchboxComponentInputBox {
+/* searchbox 2 */
+    border-radius: var(--byl-rounding) 0 0 var(--byl-rounding);
+
+}
+#voice-search-button.ytd-masthead {
+/* microphone button that NOBODY uses */
+    border-radius: var(--byl-rounding);
+    padding: 2px;
+}
+.badge-style-type-simple.ytd-badge-supported-renderer {
+/* NEW icon beside videos in reccomended. */
+    background-color: var(--byl-accent);
+    color: var(--ytd-menu-renderer-button-color);
 }
