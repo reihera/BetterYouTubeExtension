@@ -161,7 +161,6 @@ yt-chip-cloud-chip-renderer {
 #voice-search-button.ytd-masthead {
 /* microphone button that NOBODY uses */
     border-radius: var(--byl-rounding);
-    padding: 2px;
 }
 .badge-style-type-simple.ytd-badge-supported-renderer {
 /* NEW icon beside videos in reccomended. */
@@ -207,6 +206,7 @@ ytd-thumbnail[size="large"] a.ytd-thumbnail, ytd-thumbnail[size="large"]::before
     border-radius:  0 0 var(--byl-rounding) var(--byl-rounding);
     background-color: var(--byl-background);
     padding-bottom: 4px;
+    min-height: 90px;
 }
 ytd-post-renderer[rounded-container] {
     border-radius: var(--byl-rounding);
@@ -220,6 +220,7 @@ ytd-post-renderer[rounded-container] {
 }
 #author-thumbnail.ytd-comment-view-model yt-img-shadow.ytd-comment-view-model {
     border-radius: var(--byl-rounding);
+    margin: 5px;
 }
 yt-img-shadow.ytd-topbar-menu-button-renderer {
     border-radius: var(--byl-rounding);
@@ -229,11 +230,36 @@ ytd-multi-page-menu-renderer {
     border-radius: var(--byl-rounding);
 }
 #avatar.ytd-active-account-header-renderer {
-    border-radius: var(--byl-radius);
+    border-radius: var(--byl-rounding);
 }
 yt-icon.ytd-compact-link-renderer {
     color: var(--ytd-menu-renderer-color);
 }
 yt-icon.ytd-toggle-theme-compact-link-renderer {
     color: var(--ytd-menu-renderer-color);
+}
+#body.ytd-comment-view-model {
+    background-color: var(--byl-background);
+    border-radius: var(--byl-rounding);
+}
+
+.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--align-by-text {
+    background-color: var(--byl-background);
+    margin-top: -3px;
+}
+#guide-button.ytd-masthead {
+    border-radius: var(--byl-rounding);
+}
+#buttons.ytd-masthead > .ytd-masthead:not(:last-child) {
+    border-radius: var(--byl-rounding);
+}
+ytd-menu-renderer.ytd-rich-grid-media {
+    top: 50px;
+    left: 4px;
+    right: unset;
+    background-color: var(--byl-button-background);
+    border-radius: var(--byl-rounding);
+}
+yt-interaction.circular .fill.yt-interaction, yt-interaction.circular .stroke.yt-interaction {
+    border-radius: var(--byl-rounding);
 }
