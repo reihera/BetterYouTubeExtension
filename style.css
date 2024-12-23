@@ -254,9 +254,11 @@ yt-icon.ytd-toggle-theme-compact-link-renderer {
     border-radius: var(--byl-rounding);
 }
 ytd-menu-renderer.ytd-rich-grid-media {
-    top: 50px;
-    left: 4px;
-    right: unset;
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25;
+    justify-content: center;
+    right:unset;
     background-color: var(--byl-button-background);
     border-radius: var(--byl-rounding);
 }
