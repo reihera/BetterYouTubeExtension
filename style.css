@@ -265,3 +265,14 @@ ytd-menu-renderer.ytd-rich-grid-media {
 yt-interaction.circular .fill.yt-interaction, yt-interaction.circular .stroke.yt-interaction {
     border-radius: var(--byl-rounding);
 }
+ytd-author-comment-badge-renderer {
+    border-radius: var(--byl-rounding);
+    background-color: #0070ff;
+}
+#above-the-fold > div:nth-child(4) {
+    border-top: 1px solid var(--yt-spec-10-percent-layer);
+    margin-top: 4px;
+}
+#author-thumbnail.ytd-comment-simplebox-renderer {
+    border-radius: var(--byl-rounding);
+}
