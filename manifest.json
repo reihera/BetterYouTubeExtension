@@ -1,8 +1,12 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Better YouTube Layout",
   "version": "0.1.0",
-
+  "author": "Reihera",
+  "developer": {
+    "name": "Reihera",
+    "url": "https://github.com/reihera/BetterYouTubeExtension"
+  },
   "description": "Makes the YouTube layout not dogshit.",
 
   "content_scripts": [
@@ -11,5 +15,11 @@
       "js": ["BYL.js", "inject.js"],
       "css": ["style.css"]
     }
-  ]
+  ],
+  "action": {
+  "default_icon": {
+    "16": "icons/16.png",
+    "32": "icons/32.png"
+    }
+}
 }

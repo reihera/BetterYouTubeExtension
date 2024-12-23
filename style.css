@@ -221,3 +221,19 @@ ytd-post-renderer[rounded-container] {
 #author-thumbnail.ytd-comment-view-model yt-img-shadow.ytd-comment-view-model {
     border-radius: var(--byl-rounding);
 }
+yt-img-shadow.ytd-topbar-menu-button-renderer {
+    border-radius: var(--byl-rounding);
+}
+ytd-multi-page-menu-renderer {
+    background-color: var(--byl-background);
+    border-radius: var(--byl-rounding);
+}
+#avatar.ytd-active-account-header-renderer {
+    border-radius: var(--byl-radius);
+}
+yt-icon.ytd-compact-link-renderer {
+    color: var(--ytd-menu-renderer-color);
+}
+yt-icon.ytd-toggle-theme-compact-link-renderer {
+    color: var(--ytd-menu-renderer-color);
+}
