@@ -88,7 +88,7 @@ ytd-subscribe-button-renderer.style-scope {
     padding-bottom: 9.5px;
     padding-right: 6px;
     border-radius: 0 var(--byl-rounding) var(--byl-rounding) 0;
-}
+}#input-container
 div.animated-action__lottie:nth-child(1) {
     border-radius: var(--byl-rounding);
 }
@@ -263,6 +263,7 @@ ytd-menu-renderer.ytd-rich-grid-media {
     border-radius: var(--byl-rounding);
 }
 yt-interaction.circular .fill.yt-interaction, yt-interaction.circular .stroke.yt-interaction {
+
     border-radius: var(--byl-rounding);
 }
 ytd-author-comment-badge-renderer {
@@ -275,4 +276,50 @@ ytd-author-comment-badge-renderer {
 }
 #author-thumbnail.ytd-comment-simplebox-renderer {
     border-radius: var(--byl-rounding);
+}
+.yt-spec-avatar-shape--cairo-refresh.yt-spec-avatar-shape--live-ring::after {
+    border-radius: var(--byl-rounding);
+    margin-right: -6px;
+    margin-left: 5px;
+}
+
+yt-live-chat-icon-toggle-button-renderer.yt-live-chat-message-input-renderer > #button.yt-live-chat-icon-toggle-button-renderer, yt-live-chat-icon-toggle-button-renderer.yt-live-chat-restricted-participation-renderer > #button.yt-live-chat-icon-toggle-button-renderer {
+    border-radius: var(--byl-rounding);
+}
+#author-name.member.yt-live-chat-author-chip {
+    color: #fff;
+    background-color: var(--yt-live-chat-sponsor-color);
+}
+#container.yt-live-chat-ticker-sponsor-item-renderer {
+    border-radius: var(--byl-rounding);
+}
+#input-container.yt-live-chat-message-input-renderer {
+    border-radius: var(--byl-rounding);
+}
+yt-live-chat-banner-manager[has-active-banner] yt-live-chat-banner-renderer.yt-live-chat-banner-manager {
+    border-radius: var(--byl-rounding);
+}
+
+#author-photo.yt-live-chat-text-message-renderer {
+    border-radius: var(--byl-rounding);
+}
+ytd-live-chat-frame[rounded-container] iframe.ytd-live-chat-frame {
+    border-radius: var(--byl-rounding) var(--byl-rounding) 0;
+}
+ytd-live-chat-frame[rounded-container]:not([theater-watch-while]) {
+    border-radius: var(--byl-rounding);
+}
+.yt-spec-avatar-shape--cairo-refresh .yt-spec-avatar-shape__live-badge {
+    bottom: -4px;
+    right: 0px;
+}
+ytd-mini-guide-entry-renderer.style-scope:nth-child(2) {
+    display: none;
+}
+ytd-donation-shelf-renderer[modern-panels] {
+    border-radius: var(--byl-rounding);
+
+}
+#nonprofit-section.ytd-donation-shelf-renderer, #header-section.ytd-donation-shelf-renderer, #donate-section.ytd-donation-shelf-renderer, #creator-messages-section.ytd-donation-shelf-renderer, #nonprofit-section.ytd-donation-shelf-renderer, #collapse-controls-section.ytd-donation-shelf-renderer {
+    background-color: var(--byl-background);
 }
