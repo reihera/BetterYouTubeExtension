@@ -22,5 +22,12 @@
     "32": "icons/32.png"
     },
     "default_title": "fuck you"
+},
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com",
+      "strict_min_version": "58.0"
+  }
 }
 }
