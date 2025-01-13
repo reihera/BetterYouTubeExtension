@@ -367,3 +367,9 @@ yt-tab-shape.yt-tab-shape-wiz:nth-child(3) {
 .avatar.ytd-recognition-shelf-renderer {
     border-radius: var(--byl-rounding);
 }
+ytd-watch-flexy[rounded-player-large][default-layout] #ytd-player.ytd-watch-flexy {
+    border-radius: var(--byl-rounding);
+}
+ytd-guide-entry-renderer {
+    border-radius: var(--byl-rounding);
+}
