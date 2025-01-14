@@ -247,8 +247,7 @@ yt-icon.ytd-toggle-theme-compact-link-renderer {
 }
 
 .yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--align-by-text {
-    background-color: var(--byl-background);
-    margin-top: -3px;
+    background-color: #17171717;
 }
 #guide-button.ytd-masthead {
     border-radius: var(--byl-rounding);
@@ -371,5 +370,17 @@ ytd-watch-flexy[rounded-player-large][default-layout] #ytd-player.ytd-watch-flex
     border-radius: var(--byl-rounding);
 }
 ytd-guide-entry-renderer {
+    border-radius: var(--byl-rounding);
+}
+yt-img-shadow.ytd-grid-channel-renderer {
+    border-radius: var(--byl-rounding);
+}
+ytd-subscribe-button-renderer.ytd-grid-channel-renderer > yt-smartimation:nth-child(1) > div:nth-child(1) > __slot-el:nth-child(1) > yt-button-shape:nth-child(1) > button:nth-child(1) {
+    background-color: var(--byl-accent);
+}
+.yt-spec-button-shape-next--icon-leading-trailing > div:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) {
+    fill: var(--byl-verified) !important;
+}
+.yt-sheet-view-model-wiz--contextual {
     border-radius: var(--byl-rounding);
 }
