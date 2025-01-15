@@ -384,3 +384,20 @@ ytd-subscribe-button-renderer.ytd-grid-channel-renderer > yt-smartimation:nth-ch
 .yt-sheet-view-model-wiz--contextual {
     border-radius: var(--byl-rounding);
 }
+ytd-rich-section-renderer.style-scope:nth-child(7) > div:nth-child(1) > ytd-rich-shelf-renderer:nth-child(1) > div:nth-child(1) > div:nth-child(3) > ytd-button-renderer:nth-child(1) > yt-button-shape:nth-child(1) > button:nth-child(1) {
+    background-color: var(--byl-button-background);
+}
+.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--tonal {
+    scale: 1.111;
+    background-color: var(--byl-button-background);
+}
+yt-icon-button.ytd-notification-topbar-button-renderer > button:nth-child(1) {
+    background-color: var(--byl-button-background);
+    border-radius: var(--byl-rounding)
+}
+ytd-rich-section-renderer.style-scope:nth-child(25) {
+    display: none; /* fuck you surveys */
+}
+#author-photo.yt-live-chat-text-message-renderer {
+    border-radius: var(--byl-rounding);
+}
