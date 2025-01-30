@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Better YouTube Layout",
-  "version": "0.1.35",
+  "version": "0.1.37",
   "author": "Reihera",
   "developer": {
     "name": "Reihera",
@@ -18,8 +18,8 @@
   ],
   "action": {
   "default_icon": {
-    "16": "icons/16.png",
-    "32": "icons/32.png"
+    "16": "icons/fuckasslogo16.png",
+    "32": "icons/fuckasslogo32.png"
     },
     "default_title": "fuck you"
 },
