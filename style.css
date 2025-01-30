@@ -1,26 +1,24 @@
-
-ytd-app {
+/* TODO: Organize style.css into sections */
+/* TODO: unfuck the comments below videos because jesus christ */
+ytd-app { /* import vars */
     --yt-spec-brand-icon-active: var(--byl-accent);
     --yt-spec-additive-background: rgba(255, 0, 0, 0.1);
     --yt-spec-icon-inactive: var(--byl-button-background);
     --yt-spec-badge-chip-background: var(--byl-button-background);
     --ytd-menu-renderer-button-color: #fff;
     --byl-accent: #e1373a;
+    --byl-red: #e1002d;
     --byl-rounding: 4px;
     --byl-background: #171717;
     --byl-button-background: #2f2f2f;
     --byl-transparent-red: #e137373b;
     --byl-verified: #0070ff;
 }
-/* Subscribe Button ! */
-.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
-    color: #fff;
-    rtl: ignore;
-    background: var(--byl-accent);
-}
 
+}
+/* Removing horseshit */
 ytd-guide-section-renderer.style-scope:nth-child(1) > div:nth-child(2) > ytd-guide-entry-renderer:nth-child(2) {
-    display: none;
+    display: none; /* Hides shorts in sidebar */
 }
 
 ytd-rich-section-renderer.style-scope:nth-child(11) > div:nth-child(1) > ytd-rich-shelf-renderer:nth-child(1) {
@@ -34,21 +32,98 @@ ytd-reel-shelf-renderer.style-scope {
     display: none;
 }
 
+ytd-rich-section-renderer {
+    display: none;
+}
+
 ytd-guide-section-renderer.style-scope:nth-child(2) > h3:nth-child(1) {
     display: none;
 }
 ytd-rich-section-renderer.style-scope:nth-child(17) {
     display: none;
 }
-
-button.yt-spec-button-shape-next--icon-leading {
-    border-radius: 4px;
+ytd-mini-guide-entry-renderer.style-scope:nth-child(2) {
+    display: none;
 }
+yt-tab-shape.yt-tab-shape-wiz:nth-child(3) {
+    display: none; /* Hides shorts in sidebar but smaller i think */
+}
+
+
+
+/* global changes */
 html {
     --rounding: var(--byl-rounding);
     background-color: #2f2f2f;
-
 }
+
+
+/* Subscribe Button stuff */
+
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
+    color: #fff;
+    background: var(--byl-accent); /* its red again */
+}
+.smartimation__border, .smartimation--experiment-enabled .smartimation__content, .animated-action__background-container { /* subscribe animation */
+    border-radius: 4px;
+}
+
+/* Homepage Video Preview */
+
+ytd-video-meta-block.grid #channel-name.ytd-video-meta-block, .ytd-video-meta-block[meta-block].grid #channel-name.ytd-video-meta-block {
+    background-color: var(--byl-button-background);
+    border-radius: 4px;
+    padding: 2px;
+    padding-left: 4px;
+}
+
+#details.ytd-rich-grid-media {
+    border-radius:  0 0 var(--byl-rounding) var(--byl-rounding);
+    background-color: var(--byl-background);
+    padding-bottom: 4px;
+    min-height: 90px;
+}
+
+.yt-spec-avatar-shape__image { /* profile picture squaring */
+    margin-right: -12px;
+    border-radius: var(--byl-rounding);
+}
+
+yt-icon.ytd-badge-supported-renderer { /* swaggier verified check */
+    color: var(--byl-verified);
+}
+
+.yt-spec-avatar-shape--cairo-refresh .yt-spec-avatar-shape__live-badge { /* live text */
+    bottom: -4px;
+    right: 0px;
+}
+
+.yt-spec-avatar-shape--cairo-refresh.yt-spec-avatar-shape--live-ring::after { /* live ring */
+    border-radius: 5px;
+    margin-right: -5px;
+    margin-left: 7px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background-color: var(--byl-red) !important;
+    background-image: none;
+}
+
+/* Sidebar */
+yt-interaction.ytd-guide-entry-renderer {
+    border-radius: var(--byl-rounding);
+}
+
+#guide-content.ytd-app {
+/*    background-color: var(--byl-background);
+    border-radius: 0 var(--byl-rounding) var(--byl-rounding) 0;*/
+}
+
+
+/* unsorted */
+button.yt-spec-button-shape-next--icon-leading {
+    border-radius: 4px;
+}
+
 
 .yt-spec-touch-feedback-shape {
     border-radius: var(--byl-rounding);
@@ -188,29 +263,18 @@ yt-chip-cloud-chip-renderer {
     border-style: unset;
     background-color: var(--byl-accent);
 }
-yt-icon.ytd-badge-supported-renderer {
-    color: var(--byl-verified);
 
-}
 ytd-thumbnail[size="medium"] a.ytd-thumbnail, ytd-thumbnail[size="medium"]::before {
     border-radius: var(--byl-rounding);
 }
 .yt-spec-button-shape-next--size-xs {
     border-radius: var(--byl-rounding);
 }
-.yt-spec-avatar-shape__image {
-    margin-right: -12px;
-    border-radius: var(--byl-rounding);
-}
+
 ytd-thumbnail[size="large"] a.ytd-thumbnail, ytd-thumbnail[size="large"]::before {
     border-radius: var(--byl-rounding) var(--byl-rounding) 0 0;
 }
-#details.ytd-rich-grid-media {
-    border-radius:  0 0 var(--byl-rounding) var(--byl-rounding);
-    background-color: var(--byl-background);
-    padding-bottom: 4px;
-    min-height: 90px;
-}
+
 ytd-post-renderer[rounded-container] {
     border-radius: var(--byl-rounding);
     background-color: var(--byl-background);
@@ -279,11 +343,7 @@ ytd-author-comment-badge-renderer {
 #author-thumbnail.ytd-comment-simplebox-renderer {
     border-radius: var(--byl-rounding);
 }
-.yt-spec-avatar-shape--cairo-refresh.yt-spec-avatar-shape--live-ring::after {
-    border-radius: var(--byl-rounding);
-    margin-right: -6px;
-    margin-left: 5px;
-}
+
 
 yt-live-chat-icon-toggle-button-renderer.yt-live-chat-message-input-renderer > #button.yt-live-chat-icon-toggle-button-renderer, yt-live-chat-icon-toggle-button-renderer.yt-live-chat-restricted-participation-renderer > #button.yt-live-chat-icon-toggle-button-renderer {
     border-radius: var(--byl-rounding);
@@ -311,13 +371,8 @@ ytd-live-chat-frame[rounded-container] iframe.ytd-live-chat-frame {
 ytd-live-chat-frame[rounded-container]:not([theater-watch-while]) {
     border-radius: var(--byl-rounding);
 }
-.yt-spec-avatar-shape--cairo-refresh .yt-spec-avatar-shape__live-badge {
-    bottom: -4px;
-    right: 0px;
-}
-ytd-mini-guide-entry-renderer.style-scope:nth-child(2) {
-    display: none;
-}
+
+
 ytd-donation-shelf-renderer[modern-panels] {
     border-radius: var(--byl-rounding);
 
@@ -331,31 +386,21 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"] #chip-container.yt-chip-
 img.ytd-yoodle-renderer {
     border-radius: var(--byl-rounding);
 }
-#guide-content.ytd-app {
-    background-color: var(--byl-background);
-    border-radius: 0 var(--byl-rounding) var(--byl-rounding) 0;
-}
+
 .guide-entry-badge.ytd-guide-entry-renderer {
     background-color: var(--byl-transparent-red);
     padding: 3px;
     border-radius: 8px;
     align-self: center;
 }
-ytd-video-meta-block.grid #channel-name.ytd-video-meta-block, .ytd-video-meta-block[meta-block].grid #channel-name.ytd-video-meta-block {
-    background-color: var(--byl-button-background);
-    border-radius: 4px;
-    padding: 2px;
-    padding-left: 4px;
-}
+
 yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string, yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:visited {
     color: var(--yt-spec-text-primary);
 }
 .yt-image-banner-view-model-wiz--inset, ytd-channel-video-player-renderer[rounded] #player.ytd-channel-video-player-renderer, ytd-engagement-panel-section-list-renderer[modern-panels]:not([live-chat-engagement-panel]), tp-yt-paper-dialog[modern] /* misc rounding on channel page */ {
     border-radius: var(--byl-rounding);
 }
-yt-tab-shape.yt-tab-shape-wiz:nth-child(3) {
-    display: none; /* I FUCKING HATE SHORTS !!!!!!! */
-}
+
 .yt-core-attributed-string__image-element > span:nth-child(1) > div:nth-child(1) {
     color: var(--byl-verified);
     scale: 2;
@@ -388,16 +433,24 @@ ytd-rich-section-renderer.style-scope:nth-child(7) > div:nth-child(1) > ytd-rich
     background-color: var(--byl-button-background);
 }
 .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--tonal {
+    /* Create Button */
     scale: 1.111;
     background-color: var(--byl-button-background);
 }
-yt-icon-button.ytd-notification-topbar-button-renderer > button:nth-child(1) {
+/*yt-icon-button.ytd-notification-topbar-button-renderer > button:nth-child(1) {
     background-color: var(--byl-button-background);
-    border-radius: var(--byl-rounding)
+    border-radius: var(--byl-rounding)*/
+/* Notification button background */
 }
 ytd-rich-section-renderer.style-scope:nth-child(25) {
     display: none; /* fuck you surveys */
 }
 #author-photo.yt-live-chat-text-message-renderer {
+    border-radius: var(--byl-rounding);
+}
+.ytp-settings-menu {
+    border-radius: var(--byl-rounding);
+}
+.yt-spec-icon-badge-shape--style-overlay .yt-spec-icon-badge-shape__badge {
     border-radius: var(--byl-rounding);
 }
