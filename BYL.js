@@ -18,4 +18,14 @@
 }
 MoveExplore()
 */
-console.log("congratulations, you have loaded a useless js file.")
+// console.log("congratulations, you have loaded a useless js file.")
+// javascript
+// document.body.style.border = "2px solid red";
+// var head = document.getElementsByClassName("header_link_image")[0];
+// head.src = "images/Herald-Scum.png";
+
+// function changeTwitterIcon() {
+//     var head = document.getElementsByClassName("header_link_image")[0];
+//     head.src = "images/Herald-Scum.png";
+// }
+// changeTwitterIcon();

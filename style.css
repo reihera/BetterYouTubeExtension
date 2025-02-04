@@ -15,6 +15,9 @@ ytd-app { /* import vars */
     --byl-verified: #0070ff;
 }
 
+/* Development */
+
+
 }
 /* Removing horseshit */
 ytd-guide-section-renderer.style-scope:nth-child(1) > div:nth-child(2) > ytd-guide-entry-renderer:nth-child(2) {
@@ -56,7 +59,9 @@ html {
     --rounding: var(--byl-rounding);
     background-color: #2f2f2f;
 }
-
+#guide-inner-content.ytd-app:hover {
+    scrollbar-color: var(--byl-red);
+}
 
 /* Subscribe Button stuff */
 
@@ -70,13 +75,17 @@ html {
 
 /* Homepage Video Preview */
 
-ytd-video-meta-block.grid #channel-name.ytd-video-meta-block, .ytd-video-meta-block[meta-block].grid #channel-name.ytd-video-meta-block {
+/*ytd-video-meta-block.grid #channel-name.ytd-video-meta-block, .ytd-video-meta-block[meta-block].grid #channel-name.ytd-video-meta-block {
     background-color: var(--byl-button-background);
     border-radius: 4px;
     padding: 2px;
     padding-left: 4px;
+}*/
+#video-title-link.ytd-rich-grid-media {
+    border-bottom-width: 1px !important;
+    border-bottom-color: var(--ytd-searchbox-border-color) !important;
+    border-bottom-style: solid !important;
 }
-
 #details.ytd-rich-grid-media {
     border-radius:  0 0 var(--byl-rounding) var(--byl-rounding);
     background-color: var(--byl-background);
@@ -119,6 +128,18 @@ yt-interaction.ytd-guide-entry-renderer {
 }
 
 
+/* video player */
+.ytp-ce-video.ytp-ce-medium-round, .ytp-ce-playlist.ytp-ce-medium-round, .ytp-ce-medium-round .ytp-ce-expanding-overlay-background {
+    border-radius: var(--byl-rounding);
+}
+.ytp-ce-website .ytp-ce-expanding-image, .ytp-ce-merchandise .ytp-ce-expanding-image {
+    border-radius: var(--byl-rounding);
+}
+
+/* description */
+.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--outline {
+    background-color: var(--byl-button-background) !important;
+}
 /* unsorted */
 button.yt-spec-button-shape-next--icon-leading {
     border-radius: 4px;
@@ -319,15 +340,15 @@ yt-icon.ytd-toggle-theme-compact-link-renderer {
 #buttons.ytd-masthead > .ytd-masthead:not(:last-child) {
     border-radius: var(--byl-rounding);
 }
-ytd-menu-renderer.ytd-rich-grid-media {
+/*ytd-menu-renderer.ytd-rich-grid-media {
     position: relative;
     margin-left: 25%;
-    margin-right: 25;
+    margin-right: 25;f
     justify-content: center;
     right:unset;
     background-color: var(--byl-button-background);
     border-radius: var(--byl-rounding);
-}
+}*/
 yt-interaction.circular .fill.yt-interaction, yt-interaction.circular .stroke.yt-interaction {
 
     border-radius: var(--byl-rounding);
@@ -394,7 +415,7 @@ img.ytd-yoodle-renderer {
     align-self: center;
 }
 
-yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string, yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:visited {
+/*yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string, yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:visited {*/
     color: var(--yt-spec-text-primary);
 }
 .yt-image-banner-view-model-wiz--inset, ytd-channel-video-player-renderer[rounded] #player.ytd-channel-video-player-renderer, ytd-engagement-panel-section-list-renderer[modern-panels]:not([live-chat-engagement-panel]), tp-yt-paper-dialog[modern] /* misc rounding on channel page */ {
